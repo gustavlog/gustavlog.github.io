@@ -13,9 +13,12 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      background-image: url('https://cdn.pixabay.com/photo/2016/11/29/05/45/astronomy-1867616_1280.jpg');
+      background-size: cover;
+      background-blend-mode: overlay;
     }
     .note-container {
-      background-color: #ffffff;
+      background-color: rgba(255, 255, 255, 0.9);
       border-radius: 10px;
       padding: 20px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -23,14 +26,15 @@
       max-width: 600px;
     }
     .note-title {
-      font-size: 24px;
+      font-size: 28px;
       font-weight: bold;
       margin-bottom: 10px;
+      color: #333333;
     }
     .note-content {
       font-size: 16px;
-      color: #444444;
-      line-height: 1.5;
+      color: #555555;
+      line-height: 1.6;
     }
   </style>
 </head>
@@ -40,14 +44,14 @@
     <div class="note-content">
       <p><strong>Logbog-opgave 2: Spørgsmål til walking creature (16/8/2023)</strong></p>
       <p><strong>Hvad bruger man semikolonner til i Java (og Processing)?</strong></p>
-      <p>I Java (og også i Processing, da det bygger på Java) bruges semikolonner til at afslutte en kommando eller en linje med kode. Det fortæller kompilatoren, at en bestemt linje er slut, og den skal fortsætte med at analysere næste linje.</p>
+      <p>I Java (og også i Processing, da det bygger på Java) bruges semikolonner til at afslutte en kommando eller en linje med kode. Det fortæller, at en bestemt linje er slut, og den skal fortsætte med at analysere næste linje.</p>
       <p><strong>Hvad er datatyper, og hvilke datatyper kender du?</strong></p>
       <p>Datatyper angiver typen af data, en variabel eller en værdi kan indeholde. Nogle almindelige datatyper i Java inkluderer:</p>
       <ul>
         <li>int: Heltal (f.eks. 5, -10)</li>
         <li>double: Flydende kommatal (f.eks. 3.14, -0.5)</li>
         <li>boolean: Sandt eller falsk (true eller false)</li>
-        <li>String: Tekst (f.eks. "Hej verden")</li>
+        <li>String: Tekst (f.eks. "Hello world")</li>
         <li>char: Enkelt tegn (f.eks. 'a', '$')</li>
       </ul>
       <p><strong>Hvordan opretter man en variabel?</strong></p>
