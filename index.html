@@ -37,24 +37,26 @@
       color: #555555;
       line-height: 1.6;
     }
-    .nav-container {
+    .nav-widget {
       position: fixed;
-      top: 0;
+      top: 50%;
       left: 0;
-      background-color: #333333;
-      color: #ffffff;
+      transform: translateY(-50%);
+      background-color: #ffffff;
+      border-radius: 15px;
       padding: 20px;
-      height: 100vh;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: flex-start;
+      z-index: 999;
     }
 
     .nav-link {
       margin-bottom: 10px;
       text-decoration: none;
-      color: #ffffff;
+      color: #333333;
       transition: color 0.3s;
     }
 
