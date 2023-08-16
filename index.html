@@ -31,19 +31,34 @@
       font-size: 28px;
       font-weight: bold;
       margin-bottom: 10px;
-      color: #333333;
     }
+
     .note-content {
       font-size: 16px;
-      color: #555555;
       line-height: 1.6;
+    }
+
+    /* Add styles for background images */
+    .background-image {
+      position: absolute;
+      top: 0;
+      left: -50px; /* Adjust to control image position */
+      width: 200px; /* Adjust to control image size */
+      height: 100%; /* Cover full height of content */
+      z-index: 0;
+      opacity: 0.1; /* Adjust opacity as needed */
+    }
+
+    /* Add more styles for additional images */
+    .background-image:nth-child(odd) {
+      transform: rotateY(180deg); /* Flip odd images horizontally */
     }
     .nav-container {
       position: fixed;
       top: 50%;
       left: 20px;
       transform: translateY(-50%);
-      background-color: #ffffff;
+      background-color: #333333;
       border-radius: 15px;
       padding: 20px;
       box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
@@ -57,18 +72,18 @@
     .nav-link {
       margin-bottom: 10px;
       text-decoration: none;
-      color: #333333;
+      color: #ffffff;
       transition: color 0.3s;
     }
 
     .nav-link:hover {
-      color: #4d53f1;
+      color: #55D6F5;
     }
     .nav-title {
       font-size: 20px;
       font-weight: bold;
       margin-bottom: 15px;
-      color: #333333;
+      color: #ffffff;
     }
     code {
       background-color: #1a1a1a;
@@ -110,6 +125,8 @@
       <p><strong>Hvad betyder "variabel-scope," og betyder det noget i din kode?</strong></p>
       <p>Efter at have researchet på internet kan variable scope refererer til det område af koden, hvor en variabel er gyldig og kan bruges. I Java kan variabler have forskellige scopes som f.eks. global scope, klasse-scope eller metode-scope. Scopet påvirker, hvor længe en variabel eksisterer, og hvor den kan tilgås. Ja, variabel-scope betyder noget i min kode, da det hjælper med at undgå konflikter mellem variabler med samme navn og styrer, hvor variabler kan bruges.</p>     
     </div>
+    <img src="https://i.imgur.com/j4FaUXo.png" alt="Background Image" class="background-image">
+    <img src="https://i.imgur.com/sS9BlDr.png" alt="Background Image" class="background-image">
   </div>
 </body>
 </html>
