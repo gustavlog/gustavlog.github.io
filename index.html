@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Gustav S Programmering Logbog</title>
   <style>
+    
     body {
       font-family: Arial, sans-serif;
       background-color: #f2f2f2;
@@ -36,9 +37,46 @@
       color: #555555;
       line-height: 1.6;
     }
+    .nav-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-color: #333333;
+      color: #ffffff;
+      padding: 20px;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+
+    .nav-link {
+      margin-bottom: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      transition: color 0.3s;
+    }
+
+    .nav-link:hover {
+      color: #ff9900;
+    }
   </style>
 </head>
 <body>
+  <div class="nav-container">
+    <a class="nav-link" href="#semikolonner">Semikolonner</a>
+    <a class="nav-link" href="#datatyper">Datatyper</a>
+    <a class="nav-link" href="#variabel">Variabel</a>
+    <!-- Add more links for other sections if needed -->
+  </div>
+  <div class="note-container">
+    <div class="note-title">Gustav S Programmering Logbog</div>
+    <div class="note-content">
+      <p><strong>Hvad bruger man semikolonner til i Java (og Processing)?</strong></p>
+      <p id="semikolonner">I Java (og også i Processing, da det bygger på Java) bruges semikolonner til at afslutte en kommando eller en linje med kode. Det fortæller kompilatoren, at en bestemt linje er slut, og den skal fortsætte med at analysere næste linje.</p>
+      <p><strong>Hvordan opretter man en variabel?</strong></p>
+      <p id="variabel">Du opretter en variabel ved at angive datatypen, variablens navn og eventuelt initialisere den med en værdi. For eksempel:</p>
   <div class="note-container">
     <div class="note-title">Gustav S Programmering Logbog</div>
     <div class="note-content">
