@@ -87,13 +87,22 @@
       margin-bottom: 15px;
       color: #ffffff;
     }
+    .video-button-container {
+      background-color: #202225;
+      border-radius: 15px;
+      padding: 10px;
+      width: 100%;
+      position: relative;
+      z-index: 1;
+    }
+
     .video-button {
-      background-color: #202225; /* Match the note container background color */
+      background-color: #202225;
       color: #ffffff;
       border: none;
       border-radius: 15px;
       padding: 10px 0;
-      width: 100%; /* Button width matches note container */
+      width: 100%;
       cursor: pointer;
     }
 
@@ -156,7 +165,9 @@
     <h1 class="note-title">Gustav S Programmering Logbog</h1>
   </div>
   <div class="note-container">
-    <button class="video-button" onclick="openPopup()">Videoer</button>
+    <div class="video-button-container">
+      <button class="video-button" onclick="openPopup()">Videoer</button>
+    </div>
     <div class="popup-overlay" id="popupOverlay">
       <div class="popup-container">
         <span class="close-button" onclick="closePopup()">&times;</span>
