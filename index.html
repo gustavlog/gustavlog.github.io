@@ -87,12 +87,62 @@
       margin-bottom: 15px;
       color: #ffffff;
     }
+    .video-button {
+      background-color: #202225; /* Match the note container background color */
+      color: #ffffff;
+      border: none;
+      border-radius: 15px;
+      padding: 10px 0;
+      width: 100%; /* Button width matches note container */
+      cursor: pointer;
+    }
+
+    .popup-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+      display: none;
+      justify-content: center;
+      align-items: center;
+      z-index: 2;
+    }
+
+    .popup-container {
+      background-color: #333333;
+      color: #ffffff;
+      border-radius: 15px;
+      padding: 20px;
+      width: 80%;
+      max-width: 600px;
+      position: relative;
+      opacity: 0;
+      transform: translateY(-20px);
+      animation: fade-in 0.3s ease forwards;
+      z-index: 3;
+    }
+
+    .close-button {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+
     code {
       background-color: #1a1a1a;
       color: #66ff66;
       padding: 2px 6px;
       border-radius: 5px;
       font-family: 'Courier New', monospace;
+    }
+    @keyframes fade-in {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
   </style>
 </head>
@@ -105,6 +155,14 @@
   <div class="title-container">
     <h1 class="note-title">Gustav S Programmering Logbog</h1>
   </div>
+  <div class="note-container">
+    <button class="video-button" onclick="openPopup()">Videoer</button>
+    <div class="popup-overlay" id="popupOverlay">
+      <div class="popup-container">
+        <span class="close-button" onclick="closePopup()">&times;</span>
+        <p>Replace this with your video content</p>
+      </div>
+    </div>
   <div class="note-container">
     <div class="note-content">
       <p id="logbogopgave2"><strong>Logbog-opgave 2: Spørgsmål til walking creature (16/8/2023)</strong></p>
@@ -130,5 +188,14 @@
       <p>Efter at have researchet på internet kan variable scope refererer til det område af koden, hvor en variabel er gyldig og kan bruges. I Java kan variabler have forskellige scopes som f.eks. global scope, klasse-scope eller metode-scope. Scopet påvirker, hvor længe en variabel eksisterer, og hvor den kan tilgås. Ja, variabel-scope betyder noget i min kode, da det hjælper med at undgå konflikter mellem variabler med samme navn og styrer, hvor variabler kan bruges.</p>     
     </div>
   </div>
+  <script>
+    function openPopup() {
+      document.getElementById("popupOverlay").style.display = "flex";
+    }
+
+    function closePopup() {
+      document.getElementById("popupOverlay").style.display = "none";
+    }
+  </script>
 </body>
 </html>
