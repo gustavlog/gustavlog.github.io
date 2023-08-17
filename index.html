@@ -88,11 +88,10 @@
       color: #ffffff;
     }
     .video-button-container {
-      background-color: #202225;
-      border-radius: 15px;
-      padding: 10px;
+      text-align: center;
       width: 100%;
-      position: relative;
+      position: absolute;
+      bottom: -40px; /* Adjust the position */
       z-index: 1;
     }
 
@@ -116,7 +115,7 @@
       display: none;
       justify-content: center;
       align-items: center;
-      z-index: 2;
+      z-index: 3;
     }
 
     .popup-container {
@@ -130,7 +129,7 @@
       opacity: 0;
       transform: translateY(-20px);
       animation: fade-in 0.3s ease forwards;
-      z-index: 3;
+      z-index: 4;
     }
 
     .close-button {
