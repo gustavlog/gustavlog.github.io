@@ -148,6 +148,19 @@
       border-radius: 5px;
       font-family: 'Courier New', monospace;
     }
+    .code-block {
+      background-color: #1a1a1a;
+      color: #66ff66;
+      border-radius: 15px;
+      padding: 20px;
+      margin-top: 20px;
+      white-space: pre-wrap;
+    }
+
+    .code-line {
+      display: block;
+      margin-bottom: 5px;
+    }
     @keyframes fade-in {
       to {
         opacity: 1;
@@ -200,22 +213,11 @@
       <p>Efter at have researchet på internet kan variable scope refererer til det område af koden, hvor en variabel er gyldig og kan bruges. I Java kan variabler have forskellige scopes som f.eks. global scope, klasse-scope eller metode-scope. Scopet påvirker, hvor længe en variabel eksisterer, og hvor den kan tilgås. Ja, variabel-scope betyder noget i min kode, da det hjælper med at undgå konflikter mellem variabler med samme navn og styrer, hvor variabler kan bruges.</p>
       <p id="operatorer"><strong>Operatorer (18/8/2023)</strong></p>
       <p><strong>I skal lave et program, der bevæger en firkant hen over skærmen på forskellige måder, uden brug af if-statements, men kun ved brug af modulus og division af frameCount!</strong></p>
-      <p><code>void setup(){</code></p>
-      <p><code>  clear();</code></p>
-      <p><code>  size(500,500);</code></p>
-      <p><code>}</code></p>
-      <p><code></code></p>
-      <p><code>void draw(){</code></p>
-      <p><code>  noStroke();</code></p>
-      <p><code></code></p>
-      <p><code>  fill(0,10);</code></p>
-      <p><code>  rect(0,0,500,500);</code></p>
-      <p><code></code></p>
-      <p><code>  int y = 250;</code></p>
-      <p><code>  y += (frameCount/100)%2*100;</code></p>
-      <p><code>  fill(255);</code></p>
-      <p><code>  rect(frameCount%500,y,2,2);</code></p>
-      <p><code>}</code></p>
+      <div class="code-block">
+        <code class="code-line">int age = 25;</code>
+        <code class="code-line">String name = "John";</code>
+        <code class="code-line">// Add more code lines...</code>
+      </div>
     </div>
   </div>
   <script>
