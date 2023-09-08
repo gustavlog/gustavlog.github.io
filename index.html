@@ -173,9 +173,10 @@
 <body>
   <div class="nav-container">
     <h2 class="nav-title">Oversigt</h2>
-    <a class="nav-link" href="#logbogopgave2">Logbog-opgave 2 (16/8/2023)</a>
+    <a class="nav-link" href="#logbogopgave2">Intro opgave (16/8/2023)</a>
     <a class="nav-link" href="#operatorer">Operatorer (18/8/2023)</a>
-    <a class="nav-link" href="#loops">Loops - for og while (1/9/2023)(</a>
+    <a class="nav-link" href="#loops">Loops - for og while (1/9/2023)</a>
+    <a class="nav-link" href="#nestedeloops">Nestede Loops (8/9/2023)</a>
     <!-- Add more links for other sections if needed -->
   </div>
   <div class="title-container">
@@ -249,7 +250,7 @@
         <code class="code-line">  print(i)</code>
         <code class="code-line">  i = i + 1</code>
       </pre>
-      <p><strong>For loops:</strong></p>
+      <p id="nestedeloops"><strong>Nestede Loops (8/9/2023)</strong></p>
       <pre class="code-block">
         <code class="code-line">for (int i=0; i<10; i++) {</code>
         <code class="code-line">  for(int j=0; j<10; j++) {</code>
@@ -258,6 +259,18 @@
         <code class="code-line">}</code>
        </pre>
        <p>Her vil den printe 100 gange i alt, da koden "for(int j=0; j<10; j++)" kan eksekveres 10 gange før den igen skal tjekke "for (int i=0; i<10; i++)"</p>
+       <p><strong>Lav et mønster med cirkler: Brug en for-løkke til at tegne flere rækker af cirkler. Inde i hver række skal du bruge et indlejret for-loop til at placere cirklerne i en linje. Se billede nedenfor:</strong></p>
+      <pre class="code-block">
+        <code class="code-line">void setup(){</code>
+        <code class="code-line">  size(500,500);</code>
+        <code class="code-line">  background(10,10,10);</code>
+        <code class="code-line">  for(int i=0; i<501 ; i=i+50){</code>
+        <code class="code-line">    for(int j=0; j<501; j=j+50){</code>
+        <code class="code-line">      println(i,j);{</code>
+        <code class="code-line">  }</code>
+        <code class="code-line"> }</code>
+        <code class="code-line">}</code>
+       </pre>      
       </div>
     </div>
   </div>
