@@ -215,7 +215,7 @@
       <p>Efter at have researchet på internet kan variable scope refererer til det område af koden, hvor en variabel er gyldig og kan bruges. I Java kan variabler have forskellige scopes som f.eks. global scope, klasse-scope eller metode-scope. Scopet påvirker, hvor længe en variabel eksisterer, og hvor den kan tilgås. Ja, variabel-scope betyder noget i min kode, da det hjælper med at undgå konflikter mellem variabler med samme navn og styrer, hvor variabler kan bruges.</p>
       <p id="operatorer"><strong>Operatorer (18/8/2023)</strong></p>
       <p><strong>I skal lave et program, der bevæger en firkant hen over skærmen på forskellige måder, uden brug af if-statements, men kun ved brug af modulus og division af frameCount!</strong></p>
-      <div class="code-block">
+      <pre class="code-block">
         <code class="code-line">void setup(){</code>
         <code class="code-line">  clear();</code>
         <code class="code-line">  size(500,500);</code>
@@ -232,27 +232,31 @@
         <code class="code-line">  fill(255);</code>
         <code class="code-line">  rect(frameCount%500,y,2,2);</code>
         <code class="code-line">}</code>
+      </pre>
       <p id="loops"><strong>Loops - for og while (1/9/2023)</strong></p>
       <p><strong>Skriv en for og while-løkke, der udskriver tal fra 1 til 10.</strong></p>
       <p>Med for-løkke:</p>
-      <div class="code-block">
+      <pre class="code-block">
         <code class="code-line">int i = 1;</code>
         <code class="code-line">while(i < 11) {</code>
         <code class="code-line">  print(i)</code>
         <code class="code-line">  i = i + 1</code>
+      </pre>
       <p>Med while-løkke:</p>
-      <div class="code-block">
+      <pre class="code-block">
         <code class="code-line">int i = 1;</code>
         <code class="code-line">for(i < 11) {</code>
         <code class="code-line">  print(i)</code>
         <code class="code-line">  i = i + 1</code>
+      </pre>
       <p><strong>For loops:</strong></p>
-      <div class="code-block">
+      <pre class="code-block">
         <code class="code-line">for (int i=0; i<10; i++) {</code>
         <code class="code-line">  for(int j=0; j<10; j++) {</code>
         <code class="code-line">    printIn(i,j);</code>
         <code class="code-line">  }</code>
         <code class="code-line">}</code>
+       </pre>
        <p>Her vil den printe 100 gange i alt, da koden "for(int j=0; j<10; j++)" kan eksekveres 10 gange før den igen skal tjekke "for (int i=0; i<10; i++)"</p>
       </div>
     </div>
