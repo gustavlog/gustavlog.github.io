@@ -177,6 +177,7 @@
     <a class="nav-link" href="#operatorer">Operatorer (18/8/2023)</a>
     <a class="nav-link" href="#loops">Loops - for og while (1/9/2023)</a>
     <a class="nav-link" href="#nestedeloops">Nestede Loops (8/9/2023)</a>
+    <a class="nav-link" href="#arrays">Arrays (13/9/2023)</a>
     <!-- Add more links for other sections if needed -->
   </div>
   <div class="title-container">
@@ -271,8 +272,32 @@
         <code class="code-line">  }</code>
         <code class="code-line"> }</code>
         <code class="code-line">}</code>
-       </pre>      
-      </div>
+       </pre>
+      <p id="arrays"><strong>Arrays (13/9/2023)</strong></p>
+      <p>Arrays er en grundlæggende datatstruktur i programmering, der tillader dig at gemme flere værdier af samme type under ét navn. De fungerer som en liste, hvor du kan opbevare og håndtere flere elementer af data på en struktureret måde.</p>
+      <p>Dekleration af arrays</p>
+      <pre class="code-block">
+        <code class="code-line">    int[]   listeHeltal;</code>
+        <code class="code-line">    float[] listeKommatal:</code>
+       </pre>
+      <p>Oprettelse af arrays</p>
+      <pre class="code-block">
+        <code class="code-line">    listeHeltal = {1,2,3,9,0,4,5,8,7,6}; //værdier indsat</code>
+        <code class="code-line">    listKommatal = new float[4]; //tom liste</code>
+       </pre>
+      <p>Hvis du vil indsætte noget i et array gøres det ved skrive arrayet’s navn efterfulgt af firkantparanteser, der indeholder pladsnummeret. F.eks.:</p>
+      <pre class="code-block">
+        <code class="code-line">list[3] = 89;         //dette indsætter tallet 89 på plads nummer 3t</code>
+        <code class="code-line">list[8] = 11;         //dette indsætter tallet 11 på plads nummer 8</code>
+       </pre>
+      <p>For-loops er ofte brugt til at gennemgå alle elementer i en array og udføre handlinger på dem, f.eks. udskrivning, beregninger eller ændringer.</p>
+      <pre class="code-block">
+        <code class="code-line">int[] list={0,1,2,3,4};</code>
+        <code class="code-line">for( int i = 0 ; i < list.length ; i++){</code>
+        <code class="code-line">   list[i] = list[i] + 1; </code>
+        <code class="code-line">}</code>
+       </pre>
+      <p>Resultatet af dette loop er, at hvert element i list bliver øget med 1. Efter løkken vil list indeholde [1, 2, 3, 4, 5].</p>
     </div>
   </div>
   <script>
