@@ -178,6 +178,7 @@
     <a class="nav-link" href="#loops">Loops - for og while (1/9/2023)</a>
     <a class="nav-link" href="#nestedeloops">Nestede Loops (8/9/2023)</a>
     <a class="nav-link" href="#arrays">Arrays (13/9/2023)</a>
+    <a class="nav-link" href="#hackerearth">Hackerearth Opgaver (15/9/2023)</a>
     <!-- Add more links for other sections if needed -->
   </div>
   <div class="title-container">
@@ -307,7 +308,32 @@
       <pre class="code-block">
         <code class="code-line">string[] listeFarver = {"Bla","Lilla","Sort"};</code>
         <code class="code-line">print(listeFarver)</code>
-       </pre>  
+       </pre>
+      <p id="arrays"><strong>Hackerearth (15/9/2023)</strong></p>'
+      <p><strong>"You have been given a String S. You need to find and print whether this string is a palindrome or not. If yes, print "YES" (without quotes), else print "NO" (without quotes)." (Skrevet i Java 8)</strong></p>
+      <pre class="code-block">
+        <code class="code-line">import java.util.*;</code>
+        <code class="code-line"></code>
+        <code class="code-line">class TestClass {</code>
+        <code class="code-line">    public static void main(String args[] ) throws Exception {</code>
+        <code class="code-line">        Scanner in = new Scanner(System.in);</code>
+        <code class="code-line">        String s = in.nextLine();</code>
+        <code class="code-line">        String s2 ="";</code>
+        <code class="code-line">        for(int i = s.length()-1 ; i >= 0 ; i--) {</code>
+        <code class="code-line">            char c = s.charAt(i);</code>
+        <code class="code-line">            s2 = s2 + c;</code>
+        <code class="code-line"></code>
+        <code class="code-line">        }</code>
+        <code class="code-line"></code>
+        <code class="code-line">        if(s.equals(s2)){</code>
+        <code class="code-line">            System.out.println("YES")</code>
+        <code class="code-line">        }else{</code>
+        <code class="code-line">            System.out.println("NO");</code>
+        <code class="code-line">        }</code>
+        <code class="code-line"></code>
+        <code class="code-line">    }</code>
+        <code class="code-line">}</code>
+       </pre> 
     </div>
   </div>
   <script>
