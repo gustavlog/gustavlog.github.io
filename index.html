@@ -14,7 +14,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 600vh;
+      height: 650vh;
       background-image: url('https://i.imgur.com/pukcYf7.jpg');
       background-size: cover;
       background-attachment: fixed;
@@ -337,6 +337,32 @@
         <code class="code-line">            System.out.println("NO");</code>
         <code class="code-line">        }</code>
         <code class="code-line"></code>
+        <code class="code-line">    }</code>
+        <code class="code-line">}</code>
+       </pre> 
+      <p><strong>"You are required to enter a word that consists of x and y that denote the number of Zs and Os respectively. The input word is considered similar to word zoo if 2*x=y. Print Yes if the input word can be considered as the string zoo otherwise, print No." (Skrevet i Java 8)</strong></p>
+      <pre class="code-block">
+        <code class="code-line">import java.util.*;</code>
+        <code class="code-line"></code>
+        <code class="code-line">class TestClass {</code>
+        <code class="code-line">    public static void main(String args[] ) throws Exception {</code>
+        <code class="code-line">        Scanner in = new Scanner(System.in);</code>
+        <code class="code-line">        String s = in.nextLine();</code>
+        <code class="code-line">        int zs = 0;</code>
+        <code class="code-line">        int os = 0;</code>
+        <code class="code-line"></code>
+        <code class="code-line">        for (int i = 0 ; i < s.length() ; i++){</code>
+        <code class="code-line">            if(s.charAt(i) =='z'){</code>
+        <code class="code-line">                zs++;</code>
+        <code class="code-line">            }else{</code>
+        <code class="code-line">                os++;</code>
+        <code class="code-line">            }</code>
+        <code class="code-line">        }</code>
+        <code class="code-line">        if(os == zs*2){</code>
+        <code class="code-line">            System.out.println("Yes");</code>
+        <code class="code-line">        }else{</code>
+        <code class="code-line">            System.out.println("No");</code>
+        <code class="code-line">        }</code>
         <code class="code-line">    }</code>
         <code class="code-line">}</code>
        </pre> 
