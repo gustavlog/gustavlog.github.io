@@ -14,7 +14,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 700vh;
+      height: 800vh;
       background-image: url('https://i.imgur.com/pukcYf7.jpg');
       background-size: cover;
       background-attachment: fixed;
@@ -180,6 +180,8 @@
     <a class="nav-link" href="#arrays">Arrays (13/9/2023)</a>
     <a class="nav-link" href="#hackerearth">Hackerearth Opgaver (15/9/2023)</a>
     <a class="nav-link" href="#flerdimensionellearrays">Flerdimensionelle arrays (20/9/2023)</a>
+    <a class="nav-link" href="#refdata">Referencebaserede og værdibaserede datatyper (29/9/2023)</a>
+    <a class="nav-link" href="#funktioner">Funktioner (29/9/2023)</a>
     <!-- Add more links for other sections if needed -->
   </div>
   <div class="title-container">
@@ -387,6 +389,46 @@
         <code class="code-line">println("Summen i første række er: " + row2);</code>
         <code class="code-line">println("Summen i første række er: " + row3);</code>
        </pre> 
+      <p id="refdata"><strong>Referencebaserede og værdibaserede datatyper (29/9/2023)</strong></p>
+      <p>I Processing Java er der to typer af datatyper: referencebaserede og værdibaserede. Referencebaserede datatyper, objekter, gemmes i heap-hukommelsen og indeholder en reference til deres faktiske data. Værdibaserede datatyper, primitiver, gemmes i stack-hukommelsen og indeholder selve dataen. Den afgørende forskel er, hvordan de håndterer data og hukommelse, hvilket påvirker, hvordan de manipuleres og overføres i koden.</p>
+      <p>I Java er arrays objekter, og når du opretter en reference til et objekt og tildeler det til en anden reference, deler de begge den samme reference til det samme objekt. Dette er, hvad der sker i tilfælde af arrays:</p>
+      <pre class="code-block">
+        <code class="code-line">int[] array1 = {1, 2, 3};</code>
+        <code class="code-line">int[] array2 = array1;</code>
+        <code class="code-line">array2[0] = 99;</code>
+       </pre> 
+      <p>Linje 2: array2 refererer nu til det samme array som array1</p>
+      <p>Linje 3: Dette vil ændre værdien i både array1 og array2</p>
+      <p>Hvad angår strengobjekter, så er strengobjekter i Java faktisk uforanderlige (immutable). Når du ændrer en streng, oprettes der i virkeligheden en ny streng, og den gamle streng forbliver uændret. Dette er grunden til, at når du ændrer en streng, påvirker det kun den reference, der er blevet ændret, og ikke andre referencer til den samme streng.</p>
+      <p><strong>Arbejde med Primitiver: Opret to variabler af typen int og tildel dem samme værdi. Prøv at ændre værdien af den ene variabel og se, hvordan det påvirker den anden.</strong></p>
+      <pre class="code-block">
+        <code class="code-line">int a = 1;</code>
+        <code class="code-line">int b = 1;</code>
+        <code class="code-line">a = b;</code>
+        <code class="code-line">println(a, b);</code>
+       </pre>
+      <p><strong>Arbejde med Primitiv Arrays: Opret et primitivt array, f.eks. int[], og tildel det til en anden reference. Prøv at ændre værdierne i det originale array og se, om det påvirker den anden reference.</strong></p>
+      <pre class="code-block">
+        <code class="code-line">int[] a = {1,2,3};</code>
+        <code class="code-line">int[] b = {0,0,0};</code>
+        <code class="code-line">b = a;</code>
+        <code class="code-line">a[0] = 5;</code>
+        <code class="code-line">println(a, b);</code>
+       </pre>
+      <p>Her vil der printes [0] 5, [1] 2, [2] 3</p>
+      <p id="funktioner"><strong>Funktioner (29/9/2023)</strong></p>
+      <p>Eksempel på en funktion:</p>
+      <pre class="code-block">
+        <code class="code-line">int add2(int a, int b){</code>
+        <code class="code-line"> int resultat = a + b;</code>
+        <code class="code-line">return resultat;</code>
+        <code class="code-line">}</code>
+       </pre>
+      <p>Funtionens navn : anvendes til at “kalde” funktionen, når den skal anvendes</p>
+      <p>Parametre også kaldet metodeinput eller funktionsinput : kan bruges til at sende værdier til funktionen, kaldes “agrumenter”</p>
+      <p>Metodekrop eller funktionskrop : selve funktionens funktionalitet er skrevet inde i metodekroppen, som altid i Java markeres dette med krølle-paranteser</p>
+      <p>Returtype : I starten af funktionen ses hvad den returnerer i form af en bestemt datatype</p>
+      <p>Returværdi : Selve værdien der sendes tilbage fra funktionen kaldes returværdien</p>
     </div>
   </div>
   <script>
