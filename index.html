@@ -14,7 +14,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 1000vh;
+      height: 1050vh;
       background-image: url('https://i.imgur.com/pukcYf7.jpg');
       background-size: cover;
       background-attachment: fixed;
@@ -182,6 +182,7 @@
     <a class="nav-link" href="#flerdimensionellearrays">Flerdimensionelle arrays (20/9/2023)</a>
     <a class="nav-link" href="#refdata">Referencebaserede og værdibaserede datatyper (29/9/2023)</a>
     <a class="nav-link" href="#funktionterm">Funktions Terminologi (27/11/2023)</a>
+    <a class="nav-link" href="#nedarvning">Nedarvning (4/12/2023)</a>
     <!-- Add more links for other sections if needed -->
   </div>
   <div class="title-container">
@@ -433,7 +434,43 @@
       <p><strong>Parametre, Argumenter</strong></p>
       <p><p>
       <p><strong>Variabel-scope</strong></p>
-      <p><strong>Variabel-scope</strong></p>
+      <p id="nedarvning"><strong>Nedarvning (4/12/2023)</strong></p>
+      <p><strong>Fordele ved nedarvning</strong></p>
+      <p>Anvendelse af superNedarvning tillader dig at genbruge koden fra en eksisterende klasse (superklasse) i en ny klasse (subklasse), hvilket reducerer gentagelsen af kode og gør det lettere at vedligeholde.</p>
+      <p>Nedarvning hjælper med at organisere din kode ved at opdele den i mindre, mere håndterbare dele. Dette gør det lettere at forstå, teste og vedligeholde din kodebase.</p>
+      <p><strong>Sub-klasser og Super-klasser</strong></p>
+      <p>En subklasse er en klasse, der arver egenskaber og metoder fra en anden klasse kaldet superklasse. Subklassen udvider eller specialiserer funktionaliteten fra superklassen.</p>
+      <p>En superklasse er den originale klasse, hvorfra egenskaber og metoder arves. Superklassen kan også kaldes en "forældreklasse" eller "basisklasse."</p>
+      <p><strong>Anvendelse af extends</strong></p>
+      <pre class="code-block">
+        <code class="code-line">class SuperClass {</code>
+        <code class="code-line">  // Superklassekode her</code>
+        <code class="code-line">}</code>
+        <code class="code-line"></code>
+        <code class="code-line">class SubClass extends SuperClass {</code>
+        <code class="code-line">  // Subklassekode her</code>
+        <code class="code-line">}</code>
+       </pre>
+      <p>Her nedarver SubClass fra SuperClass, hvilket betyder, at SubClass arver alle egenskaber og metoder fra SuperClass.</p>
+      <p><strong>Anvendelse af super</strong></p>
+      <p>Når du opretter en instans af en subklasse, kan du kalde super() i subklassens konstruktør for at kalde superklassens konstruktør og initialisere dens egenskaber.</p>
+        <pre class="code-block">
+        <code class="code-line">class SubClass extends SuperClass {</code>
+        <code class="code-line">  SubClass() {</code>
+        <code class="code-line">    super(); // Kalder superklassens konstruktør</code>
+        <code class="code-line">    // Subklassens konstruktørkode her</code>
+        <code class="code-line">  }</code>
+        <code class="code-line">}</code>
+       </pre>
+      <p>Du kan bruge super for at kalde metoder fra superklassen indenfor subklassens metoder.</p>
+        <pre class="code-block">
+        <code class="code-line">class SubClass extends SuperClass {</code>
+        <code class="code-line">  void subMethod() {</code>
+        <code class="code-line">    super.superMethod(); // Kalder superklassens metode</code>
+        <code class="code-line">    // Subklassens metodekode her</code>
+        <code class="code-line">  }</code>
+        <code class="code-line">}</code>
+       </pre>
     </div>
   </div>
   <script>
